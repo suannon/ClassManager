@@ -221,26 +221,6 @@ body {
 	max-height: 600px;
 }
 
-@media screen and (min-width: 600px){
-
-.first{
-	background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/apple-gear-looking-pretty.jpg');
-	height: 40vw;
-	max-height: 300px;
-	background-size: cover;
-	background-position: 0 -200px;
-}
-
-.second{
-	height: 40vw;
-	background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg');
-	max-height: 300px;
-	background-size: cover;
-	background-position: 0 -150px;
-}
-
-}
-
 .first_ctn{
 	line-height: 30px;
 	position: relative;
@@ -300,6 +280,36 @@ body {
 }*/
 
 /* background-color: #0085CF; */
+
+/*------Larger Screen------*/
+
+@media screen and (min-width: 600px){
+
+.first{
+	background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/apple-gear-looking-pretty.jpg');
+	height: 40vw;
+	max-height: 300px;
+	background-size: cover;
+	background-position: 0 -200px;
+}
+
+.second{
+	height: 40vw;
+	background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg');
+	max-height: 300px;
+	background-size: cover;
+	background-position: 0 -150px;
+}
+}
+
+@media screen and (min-width: 800px){
+	.subject{
+		font-size: 70px;
+		font-weight: 200;
+		color: #333;
+		line-height: 1em;
+	}
+}
 
 /*------Mobile Lower than iPhone6s------*/
 
