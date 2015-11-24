@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------Reset-----------*/
+
+
+body {
+  font-family: "Helvetica Neue","Roboto", sans-serif;
+	background: #0085CF;
+}
+
+/*------Class that use the same style------*/
+
+.subject{
+	font-size: 40px;
+	font-weight: 200;
+	color: #333;
+	line-height: 50px;
+}
+
+.placeandtime{
+	letter-spacing: 4px;
+}
+
+.infoedit{
+	text-decoration: none;
+	color: #0085CF;
+	font-weight: 400;
+}
+
+.infoedit:hover{
+
+	color: #0A5A9E;
+
+}
+
+/*------Class that use the same style------*/
+
+.ion-ios-plus-outline:hover {  color:#fff;	}
+.ion-navicon:hover { color:#f2f2f2; }
+
+.menu{
+	height: 70px;
+	background-color: #0085CF;
+	width: 100vw;
+	color: white;
+	font-size: 18px;
+	position: fixed;
+	z-index: 5;
+}
+
+.menu span{
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	font-size: 35px;
+}
+
+.menu h1{
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: 400;
+}
+
+.wrapper{
+	width: 100vw;
+	height: auto;
+	padding-top: 70px;
+}
+
+.happening{
+	height: 60px;
+	background-color: #0085CF;
+	width: 100vw;
+	position: relative;
+}
+
+.happening_ctn{
+	line-height: 19px;
+	position: relative;
+	padding-left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.happening h1{
+	font-size: 17px;
+	font-weight: 400;
+	color: white;
+}
+
+.happening p{
+	font-size: 14px;
+	font-weight: 200;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.happening_class{
+	height: 50vw;
+	max-height: 350px;
+	background:linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url('../images/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg');
+	background-size: cover;
+	color: #2C2C2C;
+	width: 100vw;
+}
+
+.happening_class_ctn{
+	line-height: 40px;
+	position: relative;
+	padding-left: 2.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*.happening_class_ctn h1{
+	font-size: 40px;
+	font-weight: 200;
+	color: #333;
+}
+
+.happening_class_ctn h2{
+	letter-spacing: 4px;
+}
+
+.happening_class_ctn h3{
+	font-weight: lighter;
+	color: rgba(0, 0, 0, 0.7);
+}*/
+
+.coming{
+	height: 60px;
+}
+
+.coming_ctn{
+	line-height: 19px;
+	position: relative;
+	padding-left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.coming h1{
+	font-size: 17px;
+	font-weight: 400;
+	color: white;
+}
+
+.coming p{
+	font-size: 14px;
+	font-weight: 200;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.ion-ios-plus-outline{
+	font-size: 25px;
+	position: absolute;
+	right: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+	color:	rgba(255, 255, 255, 0.8);
+}
+
+.coming_classes{
+	width: 100vw;
+	height: 80vw;
+	max-height: 600px;
+}
+
+@media screen and (min-width: 600px){
+
+.first{
+	background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/apple-gear-looking-pretty.jpg');
+	height: 40vw;
+	max-height: 300px;
+	background-size: cover;
+	background-position: 0 -200px;
+}
+
+.second{
+	height: 40vw;
+	background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg');
+	max-height: 300px;
+	background-size: cover;
+	background-position: 0 -150px;
+}
+
+}
+
+@media screen and (max-width: 599px) {
+	.first{
+		background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/apple-gear-looking-pretty.jpg');
+		height: 40vw;
+		max-height: 300px;
+		background-size: cover;
+		background-position: 0 -70px;
+	}
+	.second{
+		height: 40vw;
+		background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg');
+		max-height: 300px;
+		background-size: cover;
+		background-position: 0 -50px;
+	}
+}
+
+.first_ctn{
+	line-height: 30px;
+	position: relative;
+	padding-left: 2.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*.first_ctn h1{
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.first_ctn h2{
+	letter-spacing: 4px;
+	line-height: 50px;
+}
+
+.first_ctn h3{
+	font-weight: lighter;
+	color: rgba(149, 149, 149, 1);
+}
+
+.first_ctn a{
+	text-decoration: none;
+	color: #0F67CF;
+	font-weight: 500;
+}
+*/
+.second_ctn{
+	line-height: 30px;
+	position: relative;
+	padding-left: 2.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*.second_ctn h1{
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.second_ctn h2{
+	letter-spacing: 4px;
+	line-height: 50px;
+}
+
+.second_ctn h3{
+	font-weight: lighter;
+	color: rgba(149, 149, 149, 1);
+}
+
+.second_ctn a{
+	text-decoration: none;
+	color: #0F67CF;
+	font-weight: 500;
+}*/
+
+/* background-color: #0085CF; */
