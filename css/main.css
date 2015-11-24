@@ -58,10 +58,10 @@ body {
 /*------Class that use the same style------*/
 
 .subject{
-	font-size: 40px;
+	font-size: 8vw;
 	font-weight: 200;
 	color: #333;
-	line-height: 50px;
+	line-height: 1em;
 }
 
 .placeandtime{
@@ -75,10 +75,17 @@ body {
 }
 
 .infoedit:hover{
-
 	color: #0A5A9E;
-
 }
+
+.endingtime{
+	font-size: 3vw;
+	font-weight: 400;
+}
+
+.minute_num{ padding-left:7px; padding-right: 7px; font-size: 4vw; }
+.minute_unit{ font-size: 3.5vw; }
+
 
 /*------Class that use the same style------*/
 
@@ -234,23 +241,6 @@ body {
 
 }
 
-@media screen and (max-width: 599px) {
-	.first{
-		background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/apple-gear-looking-pretty.jpg');
-		height: 40vw;
-		max-height: 300px;
-		background-size: cover;
-		background-position: 0 -70px;
-	}
-	.second{
-		height: 40vw;
-		background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg');
-		max-height: 300px;
-		background-size: cover;
-		background-position: 0 -50px;
-	}
-}
-
 .first_ctn{
 	line-height: 30px;
 	position: relative;
@@ -310,3 +300,45 @@ body {
 }*/
 
 /* background-color: #0085CF; */
+
+/*------Mobile Lower than iPhone6s------*/
+
+@media screen and (max-width: 599px) {
+	.first{
+		background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/apple-gear-looking-pretty.jpg');
+		height: 40vw;
+		max-height: 300px;
+		background-size: cover;
+		background-position: 0 -70px;
+	}
+	.second{
+		height: 40vw;
+		background:linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url('../images/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg');
+		max-height: 300px;
+		background-size: cover;
+		background-position: 0 -50px;
+	}
+
+	.happening_class_ctn{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.endingtime{
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 20px;
+	}
+	.minute_num{
+		font-size: 25px;
+		font-weight: 300;
+	}
+	.minute_unit{
+		font-size: 20px;
+		font-weight: 300;
+	}
+	.infoedit{
+		line-height: 0px;
+	}
+}
