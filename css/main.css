@@ -52,7 +52,7 @@ table {
 
 body {
   font-family: "Helvetica Neue","Roboto", sans-serif;
-	background: #0085CF;
+	background: #4D91DD;
 }
 
 /*------Class that use the same style------*/
@@ -94,7 +94,7 @@ body {
 
 .menu{
 	height: 70px;
-	background-color: #0085CF;
+	background-color: #4D91DD;
 	width: 100vw;
 	color: white;
 	font-size: 18px;
@@ -125,7 +125,7 @@ body {
 
 .happening{
 	height: 60px;
-	background-color: #0085CF;
+	background-color: #4D91DD;
 	width: 100vw;
 	position: relative;
 }
