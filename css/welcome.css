@@ -56,11 +56,12 @@ body {
   color: #232525;
 }
 
-header {
-  font-size: 25px;
+.back {
+  font-size: 20px;
   color:#fff;
   font-weight: 300;
   font-family: "Helvetica Neue", sans-serif;
+	text-decoration:none;
 }
 
 
@@ -117,9 +118,9 @@ header {
 .slidesjs-pagination span a {
   display: block;
   margin-left: 20px;
-  width: 13px;
+  width: 8px;
   height: 0;
-  padding-top: 13px;
+  padding-top: 8px;
   border-radius: 360px;
   background-color:rgba(255, 255, 255, 0.5);
   float: left;
