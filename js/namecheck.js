@@ -25,7 +25,7 @@ var ui_colors = {
 
 $('.slide').hammer().on('drag', function(event) {
   var offset, zero;
-	event.gesture.preventDefault();
+  //event.gesture.preventDefault();
 
   // Calculate where left=0 in relation to the parent
   offset = $('.slider-list').offset();
@@ -37,9 +37,15 @@ $('.slide').hammer().on('drag', function(event) {
 	  $(this).parent().css('background', ui_colors.checked);
 
   }
+
+
   if ( event.gesture.deltaX < -300) {
       $("confirmed").addTemporaryClass("appear", 1000);
             console.log("fucking confirmed!");
+
+            var audio = $("#notification")[0];
+            audio.play();
+
   }
 
   if ( event.gesture.deltaX > 0) {

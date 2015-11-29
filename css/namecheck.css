@@ -6,7 +6,7 @@ body {
 
 }
 
-h1 { font-size:40px; font-weight: 200;  color:#fff; text-align: center;padding-top: 50vh }
+h1 { font-size:40px; font-weight: 200;  color:#fff; text-align: center;padding-top: 40vh }
 
 confirmed {
 
@@ -21,7 +21,20 @@ confirmed {
 
 
 
+
  }
+
+.slide:hover {
+  background-color: #fafafa!important;
+  z-index: 999;
+  border-right: 5px solid #00E568;
+  border-left: 5px solid #DA6044;
+  transition: all 0.04s ease-in;
+    transition: all 0.04s ease-out;
+  border-bottom:1px solid #fafafa;
+  border-top: 1px solid #fafafa;
+
+}
 
 .appear {
 
@@ -33,6 +46,7 @@ confirmed {
     -o-animation: fadein 0.4s; /* Opera < 12.1 */
     animation: fadein 0.4s;
     -webkit-backdrop-filter:blur(5px);
+
 
  }
 
@@ -49,8 +63,8 @@ confirmed {
 .slide {
   margin: 0;
   background-color: #fff;
-  padding: 1.5em 1em;
-  border-bottom: 1px solid #D6D6D6;
+  padding: 1.5em 1.5em;
+  border-bottom: 0.0px solid #D6D6D6;
 }
 
 .firstname {
@@ -66,6 +80,7 @@ confirmed {
 id-number {
   font-size: 1em;
   line-height: 1.6em;
+  margin-left: 10px;
 }
 
 /* RESETS */
@@ -74,7 +89,7 @@ body, h1, h2, h3, p {
   font-family: "Helvetica Neue", sans-serif;
 }
 
-p {   color: #616161; }
+p {   color: #616161; margin-left: 10px;}
 
 
 body {
