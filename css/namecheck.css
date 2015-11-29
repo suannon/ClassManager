@@ -6,6 +6,8 @@ body {
 
 }
 
+.profile { width: 50px; height: 50px; border-radius: 360px; margin-right: 20px; }
+
 h1 { font-size:40px; font-weight: 200;  color:#fff; text-align: center;padding-top: 40vh }
 
 confirmed {
@@ -70,6 +72,7 @@ confirmed {
 .firstname {
   white-space: nowrap;
   overflow: hidden;
+  bottom:0;
 }
 
 .lastname {
@@ -89,7 +92,7 @@ body, h1, h2, h3, p {
   font-family: "Helvetica Neue", sans-serif;
 }
 
-p {   color: #616161; margin-left: 10px;}
+p {   color: #616161; }
 
 
 body {
