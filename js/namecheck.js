@@ -39,7 +39,7 @@ $('.slide').hammer().on('drag', function(event) {
   }
 
 
-  if ( event.gesture.deltaX < -300) {
+  if ( event.gesture.deltaX < -100) {
       $("confirmed").addTemporaryClass("appear", 1000);
             console.log("fucking confirmed!");
 
