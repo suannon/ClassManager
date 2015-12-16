@@ -69,6 +69,12 @@ confirmed {
 
  }
 
+ .footer_appear {
+
+     display: inline-block;
+
+  }
+
 
 
 .slider-list {
@@ -144,15 +150,15 @@ footer {
 
 
 .text_field{
+  font-size:1em;
   height: 40px;
-  width: 30vw;
+  width:60%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   border: 1px;
   border-color: white;
   border-radius: 5px;
-  min-width: 400px;
 }
 
 .two_button{
