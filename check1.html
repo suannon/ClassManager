@@ -10,7 +10,7 @@
     <!--- Web App Meta data --->
 <link rel="apple-touch-icon" href="webapp/template.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -28,6 +28,14 @@
 
     <body class="">
 
+      <div class="toolbar">
+        <a href="index.html">
+        <span class="back-button-top">
+          <span class="ion-ios-arrow-left"></span>
+           Dashboard
+         </span>
+        </div></a>
+
 
       <audio id="notification">
       <source src="sound/wappp.aiff"></source>
@@ -38,6 +46,7 @@
 <section>
   <ul class="slider-list">
 
+  <br/>
 
     <li class="slide">
       <p class="firstname">
@@ -91,6 +100,22 @@
 
   </ul>
 </section>
+
+  <footer class="uncheck">
+   <div class"uncheck_wrapper">
+     <h1 class="uncheck_head">Uncheck for ..</h1>
+     <input class="text_field" type="text" name="username" style="margin-top: 1rem;">
+     <div class="button_wrapper">
+       <a href="#"><button class="two_button">Leave</button></a>
+       <a href="#"><button class="two_button">Missing</button></a>
+     </div>
+   </div>
+ </footer>
+
+
+
+
+
 </body>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/jquery.hammer.min.js'></script>

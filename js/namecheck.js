@@ -39,17 +39,20 @@ $('.slide').hammer().on('drag', function(event) {
   }
 
 
-  if ( event.gesture.deltaX < -300) {
+  if ( event.gesture.deltaX < -100) {
       $("confirmed").addTemporaryClass("appear", 1000);
             console.log("fucking confirmed!");
 
             var audio = $("#notification")[0];
             audio.play();
-
   }
 
   if ( event.gesture.deltaX > 0) {
 	  $(this).parent().css('background', ui_colors.other);
+    if (event.gesture.deltaX >= 200) {
+      $("footer").addTemporaryClass("footer_appear", 1000);
+            console.log("fucking menu popup!");
+    }
 	}
 
 });
