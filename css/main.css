@@ -149,91 +149,121 @@ input:checked+label{
 .ion-navicon:hover { color:#f2f2f2; }
 
 /*------Menu------*/
-#overlay{
-	position: fixed;
+
+.overlay{
 	background: #333;
-	box-shadow: 8px 0px 40px rgba(0, 0, 0, 0.4);
 	width: 80vw;
-	height: 91vh;
-	z-index: 3;
-	margin-left: -100vw;
-	transition: margin-left .2s ease-out;
-	top: 9vh;
+	height: 100vh;
+	position: fixed;
+	z-index: 4;
+	font-family: "Helvetica Neue" , sans-serif;
+	color: white;
+	text-align: center;
+	margin-left: -80%;
+	transition: .5s ease;
+	visibility: visible;
 }
 
-#overlay:target{
-	margin-left: 0vw;
-	transition: margin-left .2s ease-in;
-}
-
-
-.overlay hr{
-	width: 15vw;
-	background-color: #333;
-	height: 1px;
-	min-width: 200px;
-	border: 0px;
-}
-
-#close_button{
-	position: absolute;
-	right: 2rem;
-	top: 1rem;
-	color: #333;
-	z-index: 8;
-	font-size: 30px;
+.overlay:target{
+	margin-left: 0;
+	transition: .5s ease;
+	box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.3);
 
 }
 
-#close_button:hover{
-	color: #4D91DD;
+.profile{
+	display: block;
+	height: auto;
+	width: 90%;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+	margin-top: 7.5rem;
 }
 
-.sidebar_name{
+.profile_pic{
+	width: 8em;
+	height: 8em;
+	border: 1px;
+	border-radius: 100px;
+	background-color: white;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 3rem;
+}
+
+.profile_name{
 	font-size: 35px;
-	color: white;
 	font-weight: 200;
-	text-align: center;
-	position: relative;
-	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
 }
 
-.sidebar_position{
+.profile_position{
+	font-weight: 200;
 	font-size: 20px;
-	color: white;
-	font-weight: 100;
-	text-align: center;
-	position: relative;
-	margin-top: .5rem;
+	color: rgba(255, 255, 255, .7);
 }
 
 .preference{
-	font-size: 25px;
-	color: white;
-	font-weight: 100;
+	display: block;
+	height: auto;
+	width: 90%;
+	left: 50%;
 	position: relative;
-	margin-top: 4rem;
+	transform: translateX(-50%);
+	text-align: left;
+	margin-top: 2rem;
 }
 
-.preference hr{
-	width: 80%;
-	height: 1px;
-	background-color: rgba(255, 255, 255, 0.46);
+.preference li{
+	padding-bottom: 1rem;
 }
 
 .preference h1{
-	position: relative;
-	left: 10%;
-	font-size: 20px;
-	font-weight: 200;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.preference_line{
+	width: 100%;
+	height: 1px;
+	border: 0px;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .preference ul{
-	position: relative;
-	left: 10%;
-	font-size: 20px;
-	line-height: 40px;
+	font-weight: 200;
 }
+
+.preference_info{
+	font-weight: 400;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.35);
+}
+
+.app_detail{
+	display: block;
+	height: auto;
+	width: 90%;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+	text-align: left;
+	margin-top: 2rem;
+}
+
+.app_detail h1{
+		font-size: 15px;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 1);
+}
+
+.app_detail span{
+	font-weight: 400;
+}
+
 /*------Menu*------*/
 
 .menu{
@@ -504,70 +534,44 @@ input:checked+label{
 	}
 }
 
+/*------Switch------*/
 
-/*------Class that use the same style------*/
-
-.ion-ios-plus-outline:hover {  color:#fff;	}
-.ion-navicon:hover { color:#f2f2f2; }
-
-#overlay{
-	position: fixed;
-	background: rgba(255, 255, 255, 0.85);
-	width: 100vw;
-	height: 100vh;
-	z-index: 7;
-	visibility: hidden;
-	transition: opacity .3s ease-out;
-	opacity: 0;
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #d3d3d3;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 1px #d3d3d3;
+  cursor: pointer;
+  height: 28px;
+  position: relative;
+  transition: border .25s .15s, box-shadow .25s .3s, padding .25s;
+  width: 44px;
+  vertical-align: top;
 }
-
-#overlay:target{
-	visibility: visible;
-	transition: opacity .5s ease-in;
-	opacity: 1;
+input[type="checkbox"]:after {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 24px;
+  box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1);
+  content: '';
+  display: block;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  transition: border .25s .15s, left .25s .1s, right .15s .175s;
 }
-
-.overlay ul{
-	font-family: "Helvetica Neue", sans-serif;
-	font-size: 45px;
-	text-align: center;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	line-height: 80px;
-	font-weight: 200;
+input[type="checkbox"]:checked {
+  border-color: #53d76a;
+  box-shadow: inset 0 0 0 13px #53d76a;
+  padding-left: 18px;
+  transition: border .25s, box-shadow .25s, padding .25s .15s;
 }
-
-.overlay_link{
-	text-decoration: none;
-	color: #4D91DD;
-	transition: .3s ease-out;
-}
-
-.overlay_link:hover{
-	color: #333;
-	transition: .3s ease-in;
-}
-
-.overlay hr{
-	width: 15vw;
-	background-color: #333;
-	height: 1px;
-	min-width: 200px;
-	border: 0px;
-}
-
-#close_button{
-	position: absolute;
-	right: 2rem;
-	top: 1rem;
-	color: #333;
-	z-index: 8;
-	font-size: 30px;
-	transition: .5s ease-out;
-}
-
-#close_button:hover{
-	color: #4D91DD;
-	transition: .5s ease-in;
+input[type="checkbox"]:checked:after {
+  border-color: #53d76a;
+  left: 16px;
+  right: 0;
+  transition: border .25s, left .15s .25s, right .25s .175s;
 }
