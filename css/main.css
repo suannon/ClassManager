@@ -86,50 +86,86 @@ body {
 .minute_num{ padding-left:7px; padding-right: 7px; font-size: 4vw; }
 .minute_unit{ font-size: 3.5vw; }
 
+label{
+  display: inline-flex;
+  width: 49px;
+  height: 32px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  box-shadow: inset 0 0 0 2px #E4E4E4;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+	position: relative;
+	left: 40%;
+}
+
+input{
+  display: none;
+}
+
+i{
+  height: 28px;
+  width: 28px;
+  background: #FFF;
+  display: inline-block;
+  border-radius: 60px;
+  margin-top: 2px;
+  margin-left: 2px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  box-shadow: 0 0 0 1px #E4E4E4, 0 3px 2px rgba(0,0,0,0.25);
+  pointer-events:none;
+}
+
+input:checked+label>i{
+  margin-left: 19px;
+  box-shadow:0 3px 2px rgba(0,0,0,0.25);
+}
+label:active{
+  box-shadow: inset 0 0 0 20px #E4E4E4;
+}
+label:active>i{
+  width: 34px;
+}
+input:checked+label:active>i{
+  margin-left: 13px;
+}
+input:checked+label{
+  box-shadow: inset 0 0 0 20px #53D769;
+  border: none;
+}
+
+.switch{
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	right: 1rem;
+}
 
 /*------Class that use the same style------*/
 
 .ion-ios-plus-outline:hover {  color:#fff;	}
 .ion-navicon:hover { color:#f2f2f2; }
 
+/*------Menu------*/
 #overlay{
 	position: fixed;
-	background: rgba(255, 255, 255, 0.85);
-	width: 100vw;
-	height: 100vh;
-	z-index: 7;
-	visibility: hidden;
-	transition: opacity .3s ease-out;
-	opacity: 0;
+	background: #333;
+	box-shadow: 8px 0px 40px rgba(0, 0, 0, 0.4);
+	width: 80vw;
+	height: 91vh;
+	z-index: 4;
+	margin-left: -100vw;
+	transition: margin-left .2s ease-out;
+	top: 9vh;
 }
 
 #overlay:target{
-	visibility: visible;
-	transition: opacity .5s ease-in;
-	opacity: 1;
+	margin-left: 0vw;
+	transition: margin-left .2s ease-in;
 }
 
-.overlay ul{
-	font-family: "Helvetica Neue", sans-serif;
-	font-size: 45px;
-	text-align: center;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	line-height: 80px;
-	font-weight: 200;
-}
-
-.overlay_link{
-	text-decoration: none;
-	color: #4D91DD;
-	transition: .3s ease-out;
-}
-
-.overlay_link:hover{
-	color: #333;
-	transition: .3s ease-in;
-}
 
 .overlay hr{
 	width: 15vw;
@@ -146,13 +182,59 @@ body {
 	color: #333;
 	z-index: 8;
 	font-size: 30px;
-	transition: .5s ease-out;
+
 }
 
 #close_button:hover{
 	color: #4D91DD;
-	transition: .5s ease-in;
 }
+
+.sidebar_name{
+	font-size: 35px;
+	color: white;
+	font-weight: 200;
+	text-align: center;
+	position: relative;
+	margin-top: 1rem;
+}
+
+.sidebar_position{
+	font-size: 20px;
+	color: white;
+	font-weight: 100;
+	text-align: center;
+	position: relative;
+	margin-top: .5rem;
+}
+
+.preference{
+	font-size: 25px;
+	color: white;
+	font-weight: 100;
+	position: relative;
+	margin-top: 4rem;
+}
+
+.preference hr{
+	width: 80%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.46);
+}
+
+.preference h1{
+	position: relative;
+	left: 10%;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.preference ul{
+	position: relative;
+	left: 10%;
+	font-size: 20px;
+	line-height: 40px;
+}
+/*------Menu*------*/
 
 .menu{
 	height: 70px;
