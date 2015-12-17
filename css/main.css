@@ -538,9 +538,8 @@ input:checked+label{
 
 
 ios-switch {
-  position:fixed;
+  position:auto;
   transform-style: preserve-3d;
-  margin-left:5em;
 }
 .switch, .switch .button, .switch .pill {
   height: 30px;
