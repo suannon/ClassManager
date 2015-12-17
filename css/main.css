@@ -94,12 +94,12 @@ body {
 
 #overlay{
 	position: fixed;
-	background: rgba(255, 255, 255, 0.85);
+	background: rgba(255, 255, 255, 1);
 	width: 100vw;
 	height: 100vh;
 	z-index: 7;
 	visibility: hidden;
-	transition: opacity .3s ease-out;
+	transition: opacity 1s ease-out;
 	opacity: 0;
 }
 
