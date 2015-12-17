@@ -48,15 +48,39 @@
       <a href="#"><span class="ion-close-round" style="font-size: 30px; color: white; position: absolute; right: 2rem; top:6rem;"></span></a>
       <section class="profile">
         <div class="profile_pic"></div>
-        <h1 class="profile_name">Name</h1>
+        <h1 class="profile_name">Sudarat Panthong</h1>
         <h2 class="profile_position">Department of Computer</h2>
       </section>
       <section class="preference">
         <h1>Preference</h1><hr class="preference_line" style="margin-bottom: 1rem;">
         <ul>
-          <li>Notifications<input type="checkbox"><br><span class="preference_info">Turn on to get notice by the app.</span></li><hr class="preference_line" style="margin-bottom: 1rem;">
-          <li>Auto Logout<br><span class="preference_info">Turn on to let the app log you out when you don't use it.</span></li><hr class="preference_line" style="margin-bottom: 1rem;">
-          <li>Auto Cancel Class<br><span class="preference_info">hkjhkhhkhkhk</span></li>
+          <li>Notifications<input type="checkbox"><br><span class="preference_info">Turn on to getting notice by the app.</span>          <ios-switch>
+                        <div class="switch">
+                          <div class="pill"></div>
+                          <div class="button"></div>
+                        </div>
+            </ios-switch>
+          </li>
+          <hr class="preference_line" style="margin-bottom: 1rem;">
+          <li>Auto Logout<br><span class="preference_info">Recomend if using on shared device.</span>
+            <ios-switch>
+                         <div class="switch">
+                           <div class="pill"></div>
+                           <div class="button"></div>
+                         </div>
+             </ios-switch>
+        </li>
+          <hr class="preference_line" style="margin-bottom: 1rem;">
+          <li>Auto Cancel Class<br><span class="preference_info">Cancel after no activities for 30 mins</span>
+            <ios-switch>
+                         <div class="switch">
+                           <div class="pill"></div>
+                           <div class="button"></div>
+                         </div>
+             </ios-switch>
+
+
+          </li>
         </ul>
       </section>
       <section class="app_detail">
@@ -110,6 +134,13 @@
       </div>
     </section>
     </div>
+
+    <script>
+    // for ios iOS switch
+    $('.switch').click(function() {
+      $(this).toggleClass('active');
+    });
+    </script>
 
 
   </body>
