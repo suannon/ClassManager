@@ -95,18 +95,16 @@ body {
 #overlay{
 	position: fixed;
 	background: rgba(255, 255, 255, 1);
-	width: 100vw;
+	width: 90vw;
 	height: 100vh;
 	z-index: 7;
-	visibility: hidden;
-	transition: opacity 1s ease-out;
-	opacity: 0;
+	margin-left: -100vw;
+	transition: margin-left .2s ease-out;
 }
 
 #overlay:target{
-	visibility: visible;
-	transition: opacity .5s ease-in;
-	opacity: 1;
+	margin-left: -10vw;
+	transition: margin-left .2s ease-in;
 }
 
 .overlay ul{
@@ -123,12 +121,12 @@ body {
 .overlay_link{
 	text-decoration: none;
 	color: #4D91DD;
-	transition: .3s ease-out;
+
 }
 
 .overlay_link:hover{
 	color: #333;
-	transition: .3s ease-in;
+
 }
 
 .overlay hr{
@@ -146,12 +144,12 @@ body {
 	color: #333;
 	z-index: 8;
 	font-size: 30px;
-	transition: .5s ease-out;
+
 }
 
 #close_button:hover{
 	color: #4D91DD;
-	transition: .5s ease-in;
+
 }
 
 .menu{
