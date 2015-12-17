@@ -155,7 +155,7 @@ input:checked+label{
 	box-shadow: 8px 0px 40px rgba(0, 0, 0, 0.4);
 	width: 80vw;
 	height: 91vh;
-	z-index: 4;
+	z-index: 3;
 	margin-left: -100vw;
 	transition: margin-left .2s ease-out;
 	top: 9vh;
