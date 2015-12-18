@@ -50,10 +50,14 @@ $('.slide').hammer().on('drag', function(event) {
   if ( event.gesture.deltaX > 0) {
 	  $(this).parent().css('background', ui_colors.other);
     if (event.gesture.deltaX >= 200) {
-      $("footer").addTemporaryClass("footer_appear", 1000);
+      $("footer").addClass("footer_appear");
             console.log("fucking menu popup!");
     }
 	}
+
+  $("button").click(function(){
+    $("footer").removeClass("footer_appear");
+});
 
 });
 
