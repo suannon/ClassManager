@@ -52,11 +52,12 @@ $('.slide').hammer().on('drag', function(event) {
     if (event.gesture.deltaX >= 200) {
       $("footer").addClass("footer_appear");
             console.log("fucking menu popup!");
+      $("footer").removeClass("footer_slideout");
     }
 	}
 
   $("button").click(function(){
-    $("footer").removeClass("footer_appear");
+    $("footer").addClass("footer_slideout");
 });
 
 });
