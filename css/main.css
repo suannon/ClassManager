@@ -186,7 +186,8 @@ input:checked+label{
 	height: 8em;
 	border: 1px;
 	border-radius: 100px;
-	background-color: white;
+	background: url('../images/10556507_741108205947454_6296581842466371871_n.jpg');
+	background-size: cover;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
